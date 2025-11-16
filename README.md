@@ -230,7 +230,7 @@ with open("input.jsonl", "r") as fin, open("output.jsonl", "w") as fout:
 > **Summary**: HunyuanOCR significantly outperforms larger models in cards/receipts processing and video subtitle extraction, while maintaining competitive performance on OCRBench.
 
 ## 💡 Case Studies
-<details>
+
 
 Spotting
 
@@ -243,7 +243,7 @@ Information Extraction
 Translation
 
 
-</details>
+
 
 
 ## 📚 Citation
