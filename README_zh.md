@@ -156,15 +156,60 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 > **总结**: HunyuanOCR 在卡证票据信息抽取和视频字幕提取任务上，性能均显著优于常见的VLM模型，同时在OCRBench上也达到了同样量级模型的SOTA效果。
 
+
 ## 💡 效果可视化
 <details>
-文字检测识别
+<summary>点击展开详情</summary>
 
-文档解析
+### 文字检测识别
 
-信息抽取
 
-翻译
+<p align="left">
+ <img src="./assets/spotting1_cropped.png" width="30%"/> <br>
+ <img src="./assets/vis_document_23.jpg" width="30%"/> <br>
+</p>
+
+
+### 文档解析
+
+
+### 信息抽取
+
+
+<p align="left">
+ <img src="./assets/ie_parallel.jpg" width="10%"/> <br>
+</p>
+
+**Prompt:**
+提取图片中的：['单价', '上车时间', '发票号码', '省前缀', '总金额', '发票代码', '下车时间', '里程数']的字段内容，并且按照JSON格式返回。
+**Response:**
+```json
+{
+    "单价": "3.00",
+    "上车时间": "09:01",
+    "发票号码": "42609332",
+    "省前缀": "陕",
+    "总金额": "￥77.10元",
+    "发票代码": "161002018100",
+    "下车时间": "09:51",
+    "里程数": "26.1km"
+}
+```
+
+<p align="left">
+ <img src="./assets/zimu2.jpg" width="20%"/> <br>
+</p>
+
+**Prompt:**
+提取图中的字幕
+
+**Response:**
+对不起 我是诺曼·斯佩尔曼\nSorry, I'm Norm. Spellman.
+
+
+
+### 翻译
+
 </details>
 
 

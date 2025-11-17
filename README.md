@@ -185,8 +185,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 </p>
 
 **Prompt:**
-提取图片中的：['单价', '上车时间', '发票号码', '省前缀', '总金额', '发票代码', '下车时间', '里程数'] 的字段内容，并且按照JSON格式返回。
-
+Extract the content of the fields: ['单价', '上车时间', '发票号码', '省前缀', '总金额', '发票代码', '下车时间', '里程数'] from the image and return it in JSON format.
 **Response:**
 ```json
 {
@@ -206,8 +205,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 </p>
 
 **Prompt:**
-提取图中的字幕
-
+Extract the subtitles from the image.
 **Response:**
 对不起 我是诺曼·斯佩尔曼\nSorry, I'm Norm. Spellman.
 
