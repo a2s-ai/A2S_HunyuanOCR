@@ -109,7 +109,7 @@ result = model.infer(
 print("Inference result:", result)
 ```
 
-### Altenatively, you can also use the provided demo script as follow:
+### Alternatively, you can also use the provided demo script as follow:
 ```shell
 cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 ```
