@@ -4,8 +4,7 @@
 
 </div>
 
-# 混元OCR：原生多模态端到端 OCR 专家，1B 轻量化参数却斩获多项业界 SOTA！精通复杂文档解析，兼具多语种文字识别、票据字段抽取、字幕提取、拍照翻译等全场景实用技能！
-
+# 混元OCR：原生多模态端到端 OCR 专家，1B 轻量化参数却斩获多项业界 SOTA！
 
 <p align="center">
  <img src="./assets/hunyuan_logo.png" width="400"/> <br>
