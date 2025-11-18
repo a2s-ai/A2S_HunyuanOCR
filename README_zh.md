@@ -192,15 +192,15 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 ### 信息抽取 (自建评测集) 和 OCRbench的指标
 
-| Model | Cards & Receipts | Video Subtitles | OCRBench |
-|-------|------------------|-----------------|-----------|
-| DeepSeek-OCR | 25.29 | 5.41 | 430 |
-| PP-ChatOCR | 53.64 | 3.1 | - |
-| Qwen3VL-2B-Instruct | 66.12 | 3.75 | 858 |
-| Seed1.6-VL | 68.81 | 60.45 | 881 |
-| Qwen3VL-235B-A22B-Instruct | 77.0 | 50.74 | **920** |
-| Gemini-2.5-Pro | 80.63 | 53.65 | 872 |
-| **HunyuanOCR (∼1B)** | **92.41** | **92.87** | 860 |
+| Model | Cards | Receipts | Video Subtitles | OCRBench |
+|:------|:------|:---------|:----------------|:----------|
+| DeepSeek-OCR | 10.04 | 40.54 | 5.41 | 430 |
+| PP-ChatOCR | 57.02 | 50.26 | 3.1 | - |
+| Qwen3-VL-2B-Instruct | 67.62 | 64.62 | 3.75 | 858 |
+| Seed-1.6-Vision | 70.12 | 67.5 | 60.45 | 881 |
+| Qwen3-VL-235B-A22B-Instruct | 75.59 | 78.4 | 50.74 | **920** |
+| Gemini-2.5-Pro | 80.59 | 80.66 | 53.65 | 872 |
+| **HunyuanOCR (∼1B)** | **92.29** | **92.53** | **92.87** | 860 |
 
 > **总结**: HunyuanOCR 在卡证票据信息抽取和视频字幕提取任务上，性能均显著优于常见的VLM模型，同时在OCRBench上也达到了同样量级模型的SOTA效果。
 
@@ -208,11 +208,12 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 | Method | Size | Other2En | Other2Zh | DoTA (en2zh) |
 |--------|------|-----------|-----------|--------------|
-| Gemini-2.5-Flash | - | 79.26 | 80.06 | - |
-| Qwen3-VL-235B | 235B | 73.67 | 77.20 | - |
-| Qwen3-VL-4B | 4B | 70.38 | 70.29 | - |
-| Qwen3-VL-2B | 2B | 66.30 | 66.77 | - |
-| **HunyuanOCR** | **1B** | 73.38 | 73.62 | - |
+| Gemini-2.5-Flash | - | 79.26 | 80.06 | 85.60 |
+| Qwen3-VL-235B-Instruct | 235B | 73.67 | 77.20 | 80.01 |
+| Qwen3-VL-8B-Instruct | 4B | 75.09 | 75.63 | 79.86 |
+| Qwen3-VL-4B-Instruct | 4B | 70.38 | 70.29 | 78.45 |
+| Qwen3-VL-2B-Instruct | 2B | 66.30 | 66.77 | 73.49 |
+| **HunyuanOCR** | **1B** | 73.38 | 73.62 | 83.48 |
 
 > **总结**: HunyuanOCR仅使用1B参数量，在拍照翻译任务上取得了与Gemini-2.5-Flash以及Qwen3-VL-235B相当的效果。
 
