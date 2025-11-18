@@ -74,41 +74,73 @@ pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https
 ### Model Inference
 
 ```python
-from transformers import AutoModel, AutoProcessor
+from transformers import AutoProcessor
+from transformers import HunYuanVLForConditionalGeneration
+from PIL import Image
+import numpy as np
+import requests
 import torch
-import os
+from qwen_vl_utils import process_vision_info
 
-# Set GPU device
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
-# Load model and processor
-model_name = "Tencent/HunyuanOCR"
-processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
-model = AutoModel.from_pretrained(
-    model_name,
-    attn_implementation="flash_attention_2",
-    torch_dtype=torch.bfloat16,
-    trust_remote_code=True,
-    use_safetensors=True
-)
-model = model.eval().cuda()
+def main():
+    model_name_or_path = "tencent/HunyuanOCR"
+    processor = AutoProcessor.from_pretrained(model_name_or_path, use_fast=False)
+    img_path = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/chat-ui/tools-dark.png"
+    messages1 = [
+        {
+            "role": "user",
+            "content": [
+                {"type": "image", "image": img_path},
+                {"type": "text", "text": (
+                    "Extract all information from the main body of the document image "
+                    "and represent it in markdown format, ignoring headers and footers. "
+                    "Tables should be expressed in HTML format, formulas in the document "
+                    "should be represented using LaTeX format, and the parsing should be "
+                    "organized according to the reading order."
+                )},
+            ],
+        }
+    ]
+    messages = [messages1]
+    texts = [
+        processor.apply_chat_template(msg, tokenize=False, add_generation_prompt=True)
+        for msg in messages
+    ]
+    image_inputs, video_inputs = process_vision_info(messages)
+    inputs = processor(
+        text=texts,
+        images=image_inputs,
+        videos=video_inputs,
+        padding=True,
+        return_tensors="pt",
+    )
+    model = HunYuanVLForConditionalGeneration.from_pretrained(
+        model_name_or_path,
+        attn_implementation="eager",
+        dtype=torch.bfloat16,
+        device_map="auto"
+    )
+    with torch.no_grad():
+        device = next(model.parameters()).device
+        inputs = inputs.to(device)
+        generated_ids = model.generate(**inputs, max_new_tokens=1024, do_sample=False)
+    if "input_ids" in inputs:
+        input_ids = inputs.input_ids
+    else:
+        print("inputs: # fallback", inputs)
+        input_ids = inputs.inputs
+    generated_ids_trimmed = [
+        out_ids[len(in_ids):] for in_ids, out_ids in zip(input_ids, generated_ids)
+    ]
+    output_texts = processor.batch_decode(
+        generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+    )
+    print(output_texts)
 
-# Single image inference
-image_path = "path/to/your/image.jpg" 
-prompt = "<image>\nExtract text from the image."
-output_path = "path/to/output"
 
-result = model.infer(
-    processor,
-    prompt=prompt,
-    image_file=image_path,
-    output_path=output_path,
-    base_size=1024,
-    image_size=640,
-    crop_mode=True,
-    save_results=True
-)
-print("Inference result:", result)
+if __name__ == '__main__':
+    main()
 ```
 
 ### Alternatively, you can also use the provided demo script as follow:
