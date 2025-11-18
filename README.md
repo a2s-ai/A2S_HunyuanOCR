@@ -1,13 +1,17 @@
-<div align="center">
+<div align="left">
 
 [中文](./README_zh.md) | [English](./README.md)
 
 </div>
 
+<div align="center">
+
 # HunyuanOCR
 
+</div>
+
 <p align="center">
- <img src="./assets/hyocr-head-img.png" width="70%"/> <br>
+ <img src="./assets/hyocr-head-img.png" width="60%"/> <br>
 </p>
 
 
