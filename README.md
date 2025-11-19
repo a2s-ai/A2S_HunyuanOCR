@@ -1,6 +1,6 @@
-<div align="left">
+<div align="center">
 
-[中文](./README_zh.md) | [English](./README.md)
+[中文阅读](./README_zh.md)
 
 </div>
 
@@ -312,7 +312,3 @@ Extract the subtitles from the image.
 Thanks to all contributors who helped build HunyuanOCR
 Special thanks to the Tencent Hunyuan Team
 We appreciate the support from the open-source community
-
-
-## 📄 License
-This project is licensed under the Apache 2.0 License.

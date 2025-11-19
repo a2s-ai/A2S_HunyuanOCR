@@ -1,6 +1,6 @@
 <div align="center">
 
-[中文](./README_zh.md) | [English](./README.md)
+[English Version](./README.md)
 
 </div>
 
@@ -306,7 +306,3 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 特别感谢腾讯混元团队
 
 我们感谢开源社区的支持。
-
-
-## 📄 许可证
-本项目采用 Apache 2.0 许可证。
