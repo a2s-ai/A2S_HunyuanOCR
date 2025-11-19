@@ -244,7 +244,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 #### Digitizing scanned or photographed images of multilingual documents involves, specifically, organizing the text content within the images according to reading order, using LaTeX format for formulas, and expressing complex tables in HTML format.
 
 <p align="left">
- <img src="./assets/vis-parsing.png" width="20%"/> <br>
+ <img src="./assets/vis-parsing.png" width="30%"/> <br>
 </p>
 
 
@@ -253,7 +253,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 
 <p align="left">
- <img src="./assets/ie_parallel.jpg" width="8%"/> <br>
+ <img src="./assets/ie_parallel.jpg" width="10%"/> <br>
 </p>
 
 **Prompt:**
@@ -277,7 +277,7 @@ Extract the content of the fields: ['单价', '上车时间', '发票号码', '�
 #### Our model is capable of automatically extracting subtitles from videos, including bilingual ones.
 
 <p align="left">
- <img src="./assets/zimu2.jpg" width="20%"/> <br>
+ <img src="./assets/zimu2.jpg" width="30%"/> <br>
 </p>
 
 **Prompt:**
@@ -292,7 +292,7 @@ Extract the subtitles from the image.
 #### Our model is able to translate images of minor languages ​​taken into Chinese or English text format end-to-end. Currently, it mainly supports 14 frequently used minor languages ​​(specifically including: German, Spanish, Turkish, Italian, Russian, French, Portuguese, Arabic, Thai, Vietnamese, Indonesian, Malay, Japanese, and Korean) into Chinese/English, as well as Chinese-English translation function (it won the small model track championship in the ICDAR2025 document end-to-end translation competition).
 
 <p align="left">
- <img src="./assets/vis-translation.png" width="20%"/> <br>
+ <img src="./assets/vis-translation.png" width="30%"/> <br>
 </p>
 
 </details>

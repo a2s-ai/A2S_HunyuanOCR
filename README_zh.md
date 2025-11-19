@@ -235,7 +235,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 #### 对多语种文档扫描件或拍摄图像进行电子化，具体地，是将图片中出现的文本内容按照阅读顺序进行组织、公式采用Latex格式、复杂表格采用HTML格式表达。
 
 <p align="left">
- <img src="./assets/vis-parsing.png" width="20%"/> <br>
+ <img src="./assets/vis-parsing.png" width="30%"/> <br>
 </p>
 
 ### 开放字段信息提取
@@ -244,7 +244,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 
 <p align="left">
- <img src="./assets/ie_parallel.jpg" width="5%"/> <br>
+ <img src="./assets/ie_parallel.jpg" width="10%"/> <br>
 </p>
 
 **Prompt:**
@@ -268,7 +268,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 #### 能够对视频的字幕实现自动化抽取，包括双语字幕。
 
 <p align="left">
- <img src="./assets/zimu2.jpg" width="20%"/> <br>
+ <img src="./assets/zimu2.jpg" width="30%"/> <br>
 </p>
 
 **Prompt:**
@@ -284,7 +284,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 
 <p align="left">
- <img src="./assets/vis-translation.png" width="20%"/> <br>
+ <img src="./assets/vis-translation.png" width="30%"/> <br>
 </p>
 
 </details>
