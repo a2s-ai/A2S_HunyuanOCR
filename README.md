@@ -249,13 +249,17 @@ Digitizing scanned or photographed images of multilingual documents involves, sp
 
 <p align="left">
  <img src="./assets/vis_parsing_fig.png" width="30%"/> <br>
- <img src="./assets/show_res_parsing_fig.png" width="30%"/> <br>
- <img src="./assets/vis_parsing_table.png" width="30%"/> <br>
- <img src="./assets/vis_parsing_table_2.png" width="30%"/> <br>
- <img src="./assets/psrsing_rgsj.png" width="30%"/> <br>
- <img src="./assets/parsing_rgsjz_2.png" width="30%"/> <br>
- <img src="./assets/qikai1.png" width="30%"/> <br>
- <img src="./assets/guwan1.png" width="30%"/> <br>
+  <img src="./assets/show_res_parsing_fig.png" width="30%"/> <br>
+  <img src="./assets/vis_parsing_table.png" width="30%"/> <br>
+  <img src="./assets/vis_parsing_table_2.png" width="30%"/> <br>
+  <img src="./assets/parsing_rgsj.png" width="30%"/> <br>
+  <img src="./assets/parsing_rgsjz_2.png" width="30%"/> <br>
+  <img src="./assets/qikai1.png" width="30%"/> <br>
+  <img src="./assets/guwan1.png" width="30%"/> <br>
+  <img src="./assets/parsing_chart1.png" width="30%"/> <br>
+  <img src="./assets/vis_parsing_chart1.png" width="30%"/> <br>
+  <img src="./assets/vis_parsing_chart2.png" width="30%"/> <br>
+  <img src="./assets/vis_parsing_chart3.png" width="30%"/> <br>
 </p>
 
 
@@ -264,6 +268,9 @@ Digitizing scanned or photographed images of multilingual documents involves, sp
 
 For common cards and tickets, fields of interest (such as name/address/company) are parsed using standard JSON format.
 
+<p align="left">
+ <img src="./assets/vis_ie_1.png" width="20%"/> <br>
+</p>
 
 <p align="left">
  <img src="./assets/ie_parallel.jpg" width="10%"/> <br>
@@ -291,14 +298,10 @@ Extract the content of the fields: ['单价', '上车时间', '发票号码', '�
 Our model is capable of automatically extracting subtitles from videos, including bilingual ones.
 
 <p align="left">
- <img src="./assets/zimu2.jpg" width="30%"/> <br>
+ <img src="./assets/vis_subtitle1.png" width="30%"/> <br>
+ <img src="./assets/vis_subtitle2.png" width="30%"/> <br>
+ <img src="./assets/vis_subtitle3.png" width="30%"/> <br>
 </p>
-
-**Prompt:**
-Extract the subtitles from the image.
-
-**Response:**
-对不起 我是诺曼·斯佩尔曼\nSorry, I'm Norm. Spellman.
 
 
 
@@ -307,7 +310,7 @@ Extract the subtitles from the image.
 Our model is able to translate images of minor languages ​​taken into Chinese or English text format end-to-end. Currently, it mainly supports 14 frequently used minor languages ​​(specifically including: German, Spanish, Turkish, Italian, Russian, French, Portuguese, Arabic, Thai, Vietnamese, Indonesian, Malay, Japanese, and Korean) into Chinese/English, as well as Chinese-English translation function (it won the small model track championship in the ICDAR2025 document end-to-end translation competition).
 
 <p align="left">
- <img src="./assets/vis-translation.png" width="30%"/> <br>
+ <img src="./assets/translation2.png" width="30%"/> <br>
 </p>
 
 </details>

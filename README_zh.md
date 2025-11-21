@@ -241,10 +241,15 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
  <img src="./assets/show_res_parsing_fig.png" width="30%"/> <br>
  <img src="./assets/vis_parsing_table.png" width="30%"/> <br>
  <img src="./assets/vis_parsing_table_2.png" width="30%"/> <br>
- <img src="./assets/psrsing_rgsj.png" width="30%"/> <br>
+ <img src="./assets/parsing_rgsj.png" width="30%"/> <br>
  <img src="./assets/parsing_rgsjz_2.png" width="30%"/> <br>
  <img src="./assets/qikai1.png" width="30%"/> <br>
  <img src="./assets/guwan1.png" width="30%"/> <br>
+ <img src="./assets/parsing_chart1.png" width="30%"/> <br>
+ <img src="./assets/vis_parsing_chart1.png" width="30%"/> <br>
+ <img src="./assets/vis_parsing_chart2.png" width="30%"/> <br>
+ <img src="./assets/vis_parsing_chart3.png" width="30%"/> <br>
+
 </p>
 
 
@@ -252,7 +257,9 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 对常见卡证和票据的感兴趣字段（如姓名/地址/单位等），采用标准的json格式解析。
 
-
+<p align="left">
+ <img src="./assets/vis_ie_1.png" width="20%"/> <br>
+</p>
 
 <p align="left">
  <img src="./assets/ie_parallel.jpg" width="10%"/> <br>
@@ -279,25 +286,24 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 能够对视频的字幕实现自动化抽取，包括双语字幕。
 
+
 <p align="left">
- <img src="./assets/zimu2.jpg" width="30%"/> <br>
+ <img src="./assets/vis_subtitle1.png" width="30%"/> <br>
+ <img src="./assets/vis_subtitle2.png" width="30%"/> <br>
+ <img src="./assets/vis_subtitle3.png" width="30%"/> <br>
 </p>
 
-**Prompt:**
-提取图中的字幕
-
-**Response:**
-对不起 我是诺曼·斯佩尔曼\nSorry, I'm Norm. Spellman.
 
 
 
-### 拍照翻译功能
 
-对拍照的小语种图片能够进行端到端翻译成中文或英文的文本格式输出，目前主要支持14种高频应用小语种（具体包括：德语、西班牙语、土耳其语、意大利语、俄语、法语、葡萄牙语、阿拉伯语、泰语、越南语、印尼语、马来语、日语、韩语）翻译成中/英文，以及中英互译功能（参加ICDAR2025文档端到端翻译比赛赢得了小模型赛道冠军成绩）。
+### 图片翻译功能
+
+对拍照或者字典文档的多语种图片能够进行端到端翻译成中文或英文的文本格式输出，目前主要支持14种高频应用小语种（具体包括：德语、西班牙语、土耳其语、意大利语、俄语、法语、葡萄牙语、阿拉伯语、泰语、越南语、印尼语、马来语、日语、韩语）翻译成中/英文，以及中英互译功能（参加ICDAR2025文档端到端翻译比赛赢得了小模型赛道冠军成绩）。
 
 
 <p align="left">
- <img src="./assets/vis-translation.png" width="30%"/> <br>
+ <img src="./assets/translation2.png" width="30%"/> <br>
 </p>
 
 </details>
