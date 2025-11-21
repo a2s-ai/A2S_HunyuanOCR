@@ -247,72 +247,10 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 <p align="left">
  <img src="./assets/vis_parsing_fig.png" width="30%"/> <br>
+ <img src="./assets/show_res_parsing_fig.png" width="20%"/> <br>
 </p>
 
-**Prompt:**
-Extract all information from the main body of the document image and represent it in markdown format, ignoring headers and footers. Tables should be expressed in HTML format, formulas in the document should be represented using LaTeX format, and the parsing should be organized according to the reading order.
 
-**Response:**
-完整内容，包含所有<pFig>和<quad>标记：
-
-第二步:结合菱形的性质和图②中的已知条件进行求解。
-
-<pFig>第10题解图</pFig><quad>(204,50),(325,111)</quad>
-
-## 二、填空题(每小题3分,共15分)
-
-11. x≥-1 且 x≠0
-
-12. 0【解析】由题意得,反比例函数 y=(1+2m)/x 的图象位于第一、三象限,因此 1+2m>0,因此 m>-1/2,因此 m 的最小整数值为0。
-
-13. 2/9 【解析】根据题意,画树状图如解图,
-
-<pFig>第13题解图</pFig><quad>(145,291),(388,357)</quad>
-
-由树状图知,共有9种等可能的结果,其中可以呈现青色的结果有2种,因此 P(可以呈现青色)=2/9。
-
-14. 2√10 + (√10×π)/2 【解析】如解图,连接OB,AC,由题意可知 OA=OB=OC=√(3²+1²)=√10, AC=√(2²+4²)=2√5,
-因此 OA²+OC²=AC²,
-因此 ∠AOC=90°,
-因此 圆心角AOC所对的弧长为 (90×π×√10)/180=(√10×π)/2,
-因此 扇形AOC的周长为 2√10 + (√10×π)/2。
-
-<pFig>第14题解图</pFig><quad>(362,436),(461,510)</quad>
-
-知识精准回顾：n°的圆心角所对的弧长计算公式为 l=(n×π×r)/180。
-
-15. 4√3/3 或 8√3/3 【解析】当∠BDB'=120°时,
-分两种情况：
-①当点B'在BC的下方时,如解图①,设AB'与BC的交点为O,因为∠BAC=120°,AB=AC,因此∠B=∠C=30°。
-由折叠的性质可知∠B'=∠B=30°,因为∠BDB'=120°,因此∠B'DO=60°,因此∠DOB'=90°,因此DO=(1/2)B'D=(1/2)BD,因此BO=BD+DO=BD+(1/2)BD=(3/2)BD。因为在直角三角形ABO中,BO=AB×cos30°=2√3,因此(3/2)BD=2√3,因此BD=4√3/3；
-
-②当点B'在BC的上方时,如解图②,由折叠得∠ADB'=∠ADB=(1/2)∠BDB'=60°,因为∠B=30°,因此∠BAD=90°,因为AB=4,因此BD=AB/cos30°=4/(√3/2)=8√3/3。
-
-综上所述,BD的长为4√3/3或8√3/3。
-
-<pFig>第15题解图</pFig><quad>(516,188),(809,266)</quad>
-
-<pFig>视频讲解\n白卷·15题</pFig><quad>(639,289),(713,350)</quad>
-
-## 三、解答题（本大题共8个小题,共75分）
-16. 解：
-(1) 原式=1+4+2·····3分
-=7;·····5分
-(2) 原式=4x²-4-(4x²-4x+1)
-=4x²-4-4x²+4x-1·····3分
-=4x-5·····5分
-
-17. 解：
-(1) 40,78.5;·····4分
-【解法提示】因为对A款AI机器人评分抽取的样本容量为6+6+4+4=20,因此本次抽取的问卷共有20+20=40(份)。因为对A款AI机器人评分的中位数为第10和11个数据的平均数,因此将70≤x<80这一组的评分按从小到大的顺序排列为:74,75,78,78,79,79,因此第10和11个数据分别为78,79,因此中位数为(78+79)/2=78.5分。
-
-(2) 由(1)得对A款AI机器人评分的中位数为78.5分,
-因为78.5分<80分,
-因此对A款AI机器人感到满意的人数未超过一半;·····6分
-
-(3) 由条形统计图得,对B款AI机器人评分为非常满意的有2人,
-因此300×2/20=30(人),
-答：估计此次问卷调查活动中对B款AI机器人非常满意的人数为30人。
 
 ### Open-field Information Extraction
 #### For common cards and tickets, fields of interest (such as name/address/company) are parsed using standard JSON format.
