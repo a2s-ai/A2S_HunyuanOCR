@@ -16,7 +16,7 @@
 
 
 <p align="center">
-<a href="http://29.210.129.176:8080/"><b>🎯 Demo</b></a> |
+<a href="https://huggingface.co/spaces/tencent/HunyuanOCR"><b>🎯 Demo</b></a> |
 <a href="https://huggingface.co/tencent/HunyuanOCR"><b>📥 Model Download</b></a> |
 <a href="./Hunyuan_OCR_Technical_Report.pdf"><b>📄 Technical Report</b></a>
 </p>
