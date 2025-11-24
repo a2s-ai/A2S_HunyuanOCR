@@ -69,7 +69,7 @@ from transformers import AutoProcessor
 model_path = "tencent/HunyuanOCR"
 llm = LLM(model=model_path, trust_remote_code=True)
 processor = AutoProcessor.from_pretrained(model_path)
-sampling_params = SamplingParams(temperature=0, max_tokens=16384)
+sampling_params = SamplingParams(temperature=1, max_tokens=16384)
 
 img_path = "/path/to/image.jpg"
 img = Image.open(img_path)
