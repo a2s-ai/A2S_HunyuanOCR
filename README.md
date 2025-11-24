@@ -57,16 +57,15 @@ Built on Tencent's Hunyuan technology, this versatile model delivers exceptional
 - 🧠 GPU Memory: 80GB
 - 💾 Disk Space: 6GB
 
-### Installation
-```bash
-pip install https://mirrors.tencent.com/repository/generic/transformers/transformers-4.56.0.post2-py3-none-any.whl
-pip install opencv-python-headless
-pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
-```
-
 
 
 ## 🚀 Quick Start with Transformers
+
+### Installation
+```bash
+pip install git+https://github.com/huggingface/transformers@82a06db03535c49aa987719ed0746a76093b1ec4
+```
+> **Note**: We will merge it into the Transformers main branch later.
 
 ### Model Inference
 

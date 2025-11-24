@@ -53,14 +53,15 @@
 - 🧠 GPU显存：80GB 
 - 💾 磁盘空间：6GB
 
+## 🚀 基于Transformers快速使用
+
 ### 安装步骤
+
 ```bash
-pip install https://mirrors.tencent.com/repository/generic/transformers/transformers-4.56.0.post2-py3-none-any.whl
-pip install opencv-python-headless
-pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+pip install git+https://github.com/huggingface/transformers@82a06db03535c49aa987719ed0746a76093b1ec4
 ```
 
-## 🚀 基于Transformers快速使用
+> **Note**: 我们稍后会将其合并到Transformers主分支中。
 
 ### 模型推理
 
