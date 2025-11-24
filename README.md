@@ -169,6 +169,8 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 > **Note**: Evaluation metrics for competing methods are taken from official reports when available; otherwise, they are reproduced using competitor models or interfaces with the recommended standard instructions.
 
+> **Note**: The HunyuanOCR evaluation metrics are derived using the TensorRT framework, which may slightly differ from the inference methods using Transformers or vLLM.
+
 ### Text Spotting Performance on In-house Benchmark
 
 | Model Type | Methods | Overall | Art | Doc | Game | Hand | Ads | Receipt | Screen | Scene | Video |
