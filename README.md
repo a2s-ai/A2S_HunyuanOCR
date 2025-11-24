@@ -24,7 +24,7 @@
 </div>
 
 ## 🔥 News
-- **[2025/11/20]** 📝 Inference code and model weights publicly available.
+- **[2025/11/25]** 📝 Inference code and model weights publicly available.
 
 ## 📖 Introduction
 **HunyuanOCR** stands as a leading end-to-end OCR expert VLM powered by Hunyuan's native multimodal architecture. With a remarkably lightweight 1B parameter design, it has achieved multiple state-of-the-art benchmarks across the industry. The model demonstrates mastery in **complex multilingual document parsing** while excelling in practical applications including **text spotting, open-field information extraction, video subtitle extraction, and photo translation**.
