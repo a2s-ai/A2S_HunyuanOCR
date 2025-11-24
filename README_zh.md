@@ -10,7 +10,7 @@
 
 </div>
 <p align="center">
- <img src="./assets/hyocr-head-img.png" width="70%"/> <br>
+ <img src="./assets/hyocr-head-img.png" width="80%"/> <br>
 </p>
 
 <div align="center">
@@ -38,7 +38,7 @@
 - 🌏 **多语种支持**：支持超过100种语言，在单语种和混合语言场景下均表现出色。
 
 <div align="left">
-  <img src="./assets/hyocr-pipeline.png" alt="HunyuanOCR框架" width="50%">
+  <img src="./assets/hyocr-pipeline.png" alt="HunyuanOCR框架" width="80%">
 </div>
 
 ## 🛠️ 环境依赖与安装
@@ -149,10 +149,10 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 | Model Type | Methods | Overall | Art | Doc | Game | Hand | Ads | Receipt | Screen | Scene | Video |
 |------------|---------|---------|-----|-----|------|------|-----|----------|---------|--------|--------|
 | **Traditional methods** | PaddleOCR | 53.38 | 32.83 | 70.23 | 51.59 | 56.39 | 57.38 | 50.59 | 63.38 | 44.68 | 53.35 |
-| | BaiduOCR | 61.9 | 38.5 | **78.95** | 59.24 | 59.06 | 66.7 | **63.66** | 68.18 | 55.53 | 67.38 |
+| **Traditional methods** | BaiduOCR | 61.9 | 38.5 | **78.95** | 59.24 | 59.06 | 66.7 | **63.66** | 68.18 | 55.53 | 67.38 |
 | **General VLM** | Qwen3VL-2B-Instruct | 29.68 | 29.43 | 19.37 | 20.85 | 50.57 | 35.14 | 24.42 | 12.13 | 34.90 | 40.1 |
-| | Qwen3VL-235B-Instruct | 53.62 | 46.15 | 43.78 | 48.00 | 68.90 | 64.01 | 47.53 | 45.91 | 54.56 | 63.79 |
-| | Seed-1.6-Vision | 59.23 | 45.36 | 55.04 | 59.68 | 67.46 | 65.99 | 55.68 | 59.85 | 53.66 | 70.33 |
+| **General VLM** | Qwen3VL-235B-Instruct | 53.62 | 46.15 | 43.78 | 48.00 | 68.90 | 64.01 | 47.53 | 45.91 | 54.56 | 63.79 |
+| **General VLM** | Seed-1.6-Vision | 59.23 | 45.36 | 55.04 | 59.68 | 67.46 | 65.99 | 55.68 | 59.85 | 53.66 | 70.33 |
 | **OCR-Specific VLM** | HunyuanOCR | **70.92** | **56.76** | 73.63 | **73.54** | **77.10** | **75.34** | 63.51 | **76.58** | **64.56** | **77.31** |
 
 > **总结**: HunyuanOCR OCR在各种场景下均取得了最佳的整体性能（70.92%），显著优于传统的OCR方法和常见的VLM。
@@ -163,14 +163,14 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 |:-----------|:-------|:-----|:---------|:---------|:----------|:--------|:----------|:---------|:----------|:---------|:--------|
 | | | | overall | text | formula | table | overall | text | formula | table | |
 | **General VLMs** | Gemni-2.5-pro | - | 88.03 | 0.075 | 85.92 | 85.71 | - | - | - | - | 82.64 |
-| | Qwen3-VL-235B | 235B | 89.15 | 0.069 | 88.14 | 86.21 | 79.69 | 0.09 | 80.67 | 68.31 | 81.40 |
+| **General VLMs** | Qwen3-VL-235B | 235B | 89.15 | 0.069 | 88.14 | 86.21 | 79.69 | 0.09 | 80.67 | 68.31 | 81.40 |
 | **Specialized VLMs (Modular)** | MonkeyOCR-pro-3B | 3B | 88.85 | 0.075 | 87.5 | 86.78 | 70.00 | 0.211 | 63.27 | 67.83 | 56.50 |
-| | MinerU2.5 | 1.2B | 90.67 | 0.047 | 88.46 | 88.22 | 70.91 | 0.218 | 64.37 | 70.15 | 52.05 |
-| | PaddleOCR-VL | 0.9B | 91.93 | 0.039 | 88.67 | 91.01 | 72.19 | 0.232 | 65.54 | 74.24 | 57.42 |
+| **Specialized VLMs (Modular)** | MinerU2.5 | 1.2B | 90.67 | 0.047 | 88.46 | 88.22 | 70.91 | 0.218 | 64.37 | 70.15 | 52.05 |
+| **Specialized VLMs (Modular)** | PaddleOCR-VL | 0.9B | 91.93 | 0.039 | 88.67 | 91.01 | 72.19 | 0.232 | 65.54 | 74.24 | 57.42 |
 | **Specialized VLMs (End2End)** | Mistral-OCR | - | 78.83 | 0.164 | 82.84 | 70.03 | - | - | - | - | 64.71 |
-| | Deepseek-OCR | 3B | 87.01 | 0.073 | 83.37 | 84.97 | 74.23 | 0.178 | 70.07 | 70.41 | 57.22 |
-| | dots.ocr | 3B | 88.41 | 0.048 | 83.22 | 86.78 | 78.01 | 0.121 | 74.23 | 71.89 | 77.50 |
-| | **HunyuanOCR** | 1B | **94.10** | 0.042 | **94.73** | **91.81** | **85.21** | **0.081** | **82.09** | **81.64** | **91.03** |
+| **Specialized VLMs (End2End)** | Deepseek-OCR | 3B | 87.01 | 0.073 | 83.37 | 84.97 | 74.23 | 0.178 | 70.07 | 70.41 | 57.22 |
+| **Specialized VLMs (End2End)** | dots.ocr | 3B | 88.41 | 0.048 | 83.22 | 86.78 | 78.01 | 0.121 | 74.23 | 71.89 | 77.50 |
+| **Specialized VLMs (End2End)** | **HunyuanOCR** | 1B | **94.10** | 0.042 | **94.73** | **91.81** | **85.21** | **0.081** | **82.09** | **81.64** | **91.03** |
 
 > **总结**: HunyuanOCR 在多语种文档解析方面均表现出优异的性能，在大多数类别中实现了最低的编辑距离。
 
@@ -211,8 +211,8 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 
 <p align="left">
- <img src="./assets/spotting1_cropped.png" width="30%"/> <br>
- <img src="./assets/vis_document_23.jpg" width="30%"/> <br>
+ <img src="./assets/spotting1_cropped.png" width="40%"/> <br>
+ <img src="./assets/vis_document_23.jpg" width="40%"/> <br>
 </p>
 
 
@@ -221,19 +221,18 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 对多语种文档扫描件或拍摄图像进行电子化，具体地，是将图片中出现的文本内容按照阅读顺序进行组织、公式采用Latex格式、复杂表格采用HTML格式表达。
 
 <p align="left">
- <img src="./assets/vis_parsing_fig.png" width="30%"/> <br>
- <img src="./assets/show_res_parsing_fig.png" width="30%"/> <br>
- <img src="./assets/vis_parsing_table.png" width="30%"/> <br>
- <img src="./assets/vis_parsing_table_2.png" width="30%"/> <br>
- <img src="./assets/parsing_rgsj.png" width="30%"/> <br>
- <img src="./assets/parsing_rgsjz_2.png" width="30%"/> <br>
- <img src="./assets/qikai1.png" width="30%"/> <br>
- <img src="./assets/guwan1.png" width="30%"/> <br>
- <img src="./assets/parsing_chart1.png" width="30%"/> <br>
- <img src="./assets/vis_parsing_chart1.png" width="30%"/> <br>
- <img src="./assets/vis_parsing_chart2.png" width="30%"/> <br>
- <img src="./assets/vis_parsing_chart3.png" width="30%"/> <br>
-
+ <img src="./assets/vis_parsing_fig.png" width="40%"/> <br>
+  <img src="./assets/show_res_parsing_fig.png" width="40%"/> <br>
+  <img src="./assets/vis_parsing_table.png" width="40%"/> <br>
+  <img src="./assets/vis_parsing_table_2.png" width="40%"/> <br>
+  <img src="./assets/parsing_rgsj.png" width="40%"/> <br>
+  <img src="./assets/parsing_rgsjz_2.png" width="40%"/> <br>
+  <img src="./assets/qikai1.png" width="40%"/> <br>
+  <img src="./assets/guwan1.png" width="40%"/> <br>
+  <img src="./assets/parsing_chart1.png" width="40%"/> <br>
+  <img src="./assets/vis_parsing_chart1.png" width="40%"/> <br>
+  <img src="./assets/vis_parsing_chart2.png" width="40%"/> <br>
+  <img src="./assets/vis_parsing_chart3.png" width="40%"/> <br>
 </p>
 
 
@@ -242,11 +241,11 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 对常见卡证和票据的感兴趣字段（如姓名/地址/单位等），采用标准的json格式解析。
 
 <p align="left">
- <img src="./assets/vis_ie_1.png" width="30%"/> <br>
+ <img src="./assets/vis_ie_1.png" width="40%"/> <br>
 </p>
 
 <p align="left">
- <img src="./assets/ie_parallel.jpg" width="10%"/> <br>
+ <img src="./assets/ie_parallel.jpg" width="25%"/> <br>
 </p>
 
 **Prompt:**
@@ -272,11 +271,10 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 
 <p align="left">
- <img src="./assets/vis_subtitle1.png" width="30%"/> <br>
- <img src="./assets/vis_subtitle2.png" width="30%"/> <br>
- <img src="./assets/vis_subtitle3.png" width="27.5%"/> <br>
+ <img src="./assets/vis_subtitle1.png" width="40%"/> <br>
+ <img src="./assets/vis_subtitle2.png" width="40%"/> <br>
+ <img src="./assets/vis_subtitle3.png" width="37.5%"/> <br>
 </p>
-
 
 
 
@@ -287,7 +285,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 
 <p align="left">
- <img src="./assets/translation2.png" width="30%"/> <br>
+ <img src="./assets/translation2.png" width="40%"/> <br>
 </p>
 
 </details>
