@@ -17,7 +17,7 @@
 <p align="center">
 <a href="https://huggingface.co/spaces/tencent/HunyuanOCR"><b>🎯 在线Demo体验</b></a> |
 <a href="https://huggingface.co/tencent/HunyuanOCR"><b>📥 模型权重下载</b></a> |
-<a href="./Hunyuan_OCR_Technical_Report.pdf"><b>📄 技术报告</b></a>
+<a href="https://github.com/Tencent-Hunyuan/HunyuanOCR/blob/main/HunyuanOCR_Technical_Report.pdf"><b>📄 技术报告</b></a>
 </p>
 
 ## 🔥 最新动态
@@ -338,8 +338,8 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 }
 
 ## 🙏 致谢
-感谢所有为HunyuanOCR的开发做出贡献的人们
+我们衷心感谢[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)、[MinerU](https://github.com/opendatalab/MinerU)、[MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR)、[DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)、[dots.ocr](https://github.com/rednote-hilab/dots.ocr) 的作者和贡献者，感谢他们杰出的开源工作和宝贵的研究思路。
 
-特别感谢腾讯混元团队
+同时我们也感谢以下宝贵的开源数据集：[OminiDocBench](https://github.com/opendatalab/OmniDocBench)、[OCRBench](https://github.com/Yuliang-Liu/MultimodalOCR/tree/main/OCRBench)、[DoTA](https://github.com/liangyupu/DIMTDA)。
 
-我们感谢开源社区的支持。
+特别感谢vLLM社区在推理部署方面所提供的即时支持。

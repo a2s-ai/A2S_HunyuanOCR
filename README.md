@@ -18,7 +18,7 @@
 <p align="center">
 <a href="https://huggingface.co/spaces/tencent/HunyuanOCR"><b>🎯 Demo</b></a> |
 <a href="https://huggingface.co/tencent/HunyuanOCR"><b>📥 Model Download</b></a> |
-<a href="./Hunyuan_OCR_Technical_Report.pdf"><b>📄 Technical Report</b></a>
+<a href="https://github.com/Tencent-Hunyuan/HunyuanOCR/blob/main/HunyuanOCR_Technical_Report.pdf"><b>📄 Technical Report</b></a>
 </p>
 
 ## 🔥 News
@@ -338,6 +338,7 @@ Our model is able to translate images of minor languages ​​taken into Chines
 }
 
 ## 🙏 Acknowledgements
-Thanks to all contributors who helped build HunyuanOCR
-Special thanks to the Tencent Hunyuan Team
-We appreciate the support from the open-source community
+We would like to thank [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), [MinerU](https://github.com/opendatalab/MinerU), [MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR), [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR), [dots.ocr](https://github.com/rednote-hilab/dots.ocr) for their valuable models and ideas.
+We also appreciate the benchmarks: [OminiDocBench](https://github.com/opendatalab/OmniDocBench), [OCRBench](https://github.com/Yuliang-Liu/MultimodalOCR/tree/main/OCRBench), [DoTA](https://github.com/liangyupu/DIMTDA).
+
+Special thanks to vLLM Community for Day-0 inference support.
