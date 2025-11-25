@@ -249,7 +249,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 | Qwen3-VL-2B-Instruct | 2B | 66.30 | 66.77 | 73.49 |
 | **HunyuanOCR** | **1B** | 73.38 | 73.62 | 83.48 |
 
-> **总结**: HunyuanOCR仅使用1B参数量，在拍照翻译任务上取得了与Gemini-2.5-Flash以及Qwen3-VL-235B相当的效果。
+> **总结**: HunyuanOCR仅使用1B参数量，在拍照翻译任务上取得了与Qwen3-VL-235B相当的效果。
 
 ## 💡 效果可视化
 <details>
