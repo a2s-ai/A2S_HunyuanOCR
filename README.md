@@ -117,7 +117,7 @@ print(clean_repeated_substrings(output.outputs[0].text))
 ```bash
 pip install git+https://github.com/huggingface/transformers@82a06db03535c49aa987719ed0746a76093b1ec4
 ```
-> **Note**: We will merge it into the Transformers main branch later.
+> **Note**: Currently, Transformers has a certain performance degradation compared to the vLLM framework (we are working hard to fix it), and we will merge the fixed version into the Transformers main branch later.
 
 ### Model Inference
 

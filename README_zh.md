@@ -115,7 +115,7 @@ print(clean_repeated_substrings(output.outputs[0].text))
 pip install git+https://github.com/huggingface/transformers@82a06db03535c49aa987719ed0746a76093b1ec4
 ```
 
-> **Note**: 我们稍后会将其合并到Transformers主分支中。
+> **Note**: 目前Transformers相比vLLM框架存在一定的性能下滑（正在努力修复中），我们后续会将修复后版本合并到Transformers主分支中。
 
 ### 模型推理
 
