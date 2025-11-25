@@ -360,4 +360,4 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 同时我们也感谢以下宝贵的开源数据集：[OminiDocBench](https://github.com/opendatalab/OmniDocBench)、[OCRBench](https://github.com/Yuliang-Liu/MultimodalOCR/tree/main/OCRBench)、[DoTA](https://github.com/liangyupu/DIMTDA)。
 
-特别感谢vLLM社区在推理部署方面所提供的即时支持。
+特别感谢vLLM和Hugging Face社区在推理部署方面所提供的即时支持。
