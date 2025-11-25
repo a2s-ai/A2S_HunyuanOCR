@@ -342,6 +342,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 
 
 ## 📚 引用
+```
 @software{hunyuanocr2025,
   author    = {Tencent Hunyuan Vision Team},
   title     = {HunyuanOCR Technical Report},
@@ -349,6 +350,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
   url       = {https://github.com/Tencent-Hunyuan/HunyuanOCR},
   publisher = {GitHub}
 }
+```
 
 ## 🙏 致谢
 我们衷心感谢[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)、[MinerU](https://github.com/opendatalab/MinerU)、[MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR)、[DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)、[dots.ocr](https://github.com/rednote-hilab/dots.ocr) 的作者和贡献者，感谢他们杰出的开源工作和宝贵的研究思路。

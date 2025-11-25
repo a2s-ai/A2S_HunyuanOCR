@@ -343,6 +343,7 @@ Our model is able to translate images of minor languages ​​taken into Chines
 
 
 ## 📚 Citation
+```
 @software{hunyuanocr2025,
   author    = {Tencent Hunyuan Vision Team},
   title     = {HunyuanOCR Technical Report},
@@ -350,6 +351,7 @@ Our model is able to translate images of minor languages ​​taken into Chines
   url       = {https://github.com/Tencent-Hunyuan/HunyuanOCR},
   publisher = {GitHub}
 }
+```
 
 ## 🙏 Acknowledgements
 We would like to thank [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), [MinerU](https://github.com/opendatalab/MinerU), [MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR), [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR), [dots.ocr](https://github.com/rednote-hilab/dots.ocr) for their valuable models and ideas.
