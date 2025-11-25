@@ -38,7 +38,7 @@
 - 🌏 **多语种支持**：支持超过100种语言，在单语种和混合语言场景下均表现出色。
 
 <div align="left">
-  <img src="./assets/hyocr-pipeline.png" alt="HunyuanOCR框架" width="80%">
+  <img src="./assets/hyocr-pipeline-v1.png" alt="HunyuanOCR框架" width="80%">
 </div>
 
 ## 🛠️ 环境依赖与安装

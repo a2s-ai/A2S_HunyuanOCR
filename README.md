@@ -39,7 +39,7 @@
 - 🌏 **Extensive Language Support**: Robust support for over 100 languages, excelling in both single-language and mixed-language scenarios across various document types.
 
 <div align="left">
-  <img src="./assets/hyocr-pipeline.png" alt="HunyuanOCR framework" width="80%">
+  <img src="./assets/hyocr-pipeline-v1.png" alt="HunyuanOCR framework" width="80%">
 </div>
 
 
