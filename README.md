@@ -50,7 +50,7 @@
 ### System Requirements
 - 🖥️ Operating System: Linux
 - 🐍 Python: 3.12+ (recommended and tested)
-- ⚡ CUDA: 12.8
+- ⚡ CUDA: 12.9
 - 🔥 PyTorch: 2.7.1
 - 🎮 GPU: NVIDIA GPU with CUDA support
 - 🧠 GPU Memory: 20GB (for vLLM)

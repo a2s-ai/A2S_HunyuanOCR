@@ -46,7 +46,7 @@
 ### 系统要求
 - 🖥️ 操作系统：Linux
 - 🐍 Python版本：3.12+（推荐）
-- ⚡ CUDA版本：12.8
+- ⚡ CUDA版本：12.9
 - 🔥 PyTorch版本：2.7.1
 - 🎮 GPU：支持CUDA的NVIDIA显卡
 - 🧠 GPU显存：20GB (for vLLM)
