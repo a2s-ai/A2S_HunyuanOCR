@@ -25,6 +25,32 @@ def clean_repeated_substrings(text):
 
     return text
 
+def norm_formula_HYOCR(gt_form,pre_form):
+    """
+    NORMARLIZE for OmniDocBench.input:gt_form,pred_form(from quick_match_display_formula)
+    # End-to-end document parsing bypasses layout constraints and category definitions, 
+    # yet the HunyuanOCR model produces outputs with more flexible granularities. 
+    # For certain mathematical expressions, HunyuanOCR may parse them using a mix of plain texts and embedded LaTeX formulas. 
+    # This can lead to mismatches when evaluated with OmniDocBench’s quick-match mechanism. 
+    # Therefore, we manually correct cases with incorrect matches (i.e., those with an edit-distance score greater than 0.5). 
+    # Below is a piece of logic code used to handle some normalization cases.
+    """
+    def clean_gt_tail(gt: str):
+        pattern = r'(\\quad+|\\qquad+)\s*\{?\(\s*\d+\s*\)\}?\s*$'
+        return re.sub(pattern, '', gt).rstrip()
+    
+    pre_form = clean_gt_tail(pre_form)
+    gt_form = gt_form.replace('\[', '').replace('\]', '').replace('，', ',').strip()
+    pre_form = pre_form.replace('\[', '').replace('\]', '').replace('，', ',').strip()
+    pre_form = pre_form.replace("\\text{ⓐ}", "\\textcircled{a}") \
+        .replace("\\text{ⓑ}", "\\textcircled{b}") \
+        .replace("\\text{ⓒ}", "\\textcircled{c}") \
+        .replace("\\text{ⓓ}", "\\textcircled{d}")
+    
+    return gt_form, pre_form
+
+
+
 def parse_coords(coord_str: str) -> Tuple[float, float]:
     """Parse coordinate string and return (x,y) tuple"""
     try:

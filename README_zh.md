@@ -363,7 +363,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 ```
 @misc{hunyuanvisionteam2025hunyuanocrtechnicalreport,
       title={HunyuanOCR Technical Report}, 
-      author={Hunyuan Vision Team and Pengyuan Lyu and Xingyu Wan and Gengluo Li and Shangpin Peng and Weinong Wang and Liang Wu and Huawen Shen and Yu Zhou and Canhui Tang and Qi Yang and Qiming Peng and Bin Luo and Hower Yang and Houwen Peng and Hongming Yang and Senhao Xie and Binghong Wu and Mana Yang and Sergey Wang and Raccoon Liu and Dick Zhu and Jie Jiang and Linus and Han Hu and Chengquan Zhang},
+      author={Hunyuan Vision Team and Pengyuan Lyu and Xingyu Wan and Gengluo Li and Shangpin Peng and Weinong Wang and Liang Wu and Huawen Shen and Yu Zhou and Canhui Tang and Qi Yang and Qiming Peng and Bin Luo and Hower Yang and Xinsong Zhang and Jinnian Zhang and Houwen Peng and Hongming Yang and Senhao Xie and Longsha Zhou and Ge Pei and Binghong Wu and Kan Wu and Mana Yang and Sergey Wang and Raccoon Liu and Dick Zhu and Jie Jiang and Linus and Han Hu and Chengquan Zhang},
       year={2025},
       journal={arXiv preprint arXiv:2510.18234},
       url={https://arxiv.org/abs/2511.19575}, 
