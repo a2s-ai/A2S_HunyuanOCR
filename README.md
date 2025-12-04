@@ -74,11 +74,8 @@
 
 ### Installation
 ```bash
-uv venv hunyuanocr
-source hunyuanocr/bin/activate
-
-uv pip install -U vllm --pre --extra-index-url https://wheels.vllm.ai/nightly
-uv pip install -r requirements.txt
+pip install vllm>=0.12.0
+pip install -r requirements.txt
 ```
 
 Note: We suggest to install [cuda-compat-12-9](https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/):
