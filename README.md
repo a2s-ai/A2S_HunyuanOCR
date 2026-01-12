@@ -225,7 +225,7 @@ cd Hunyuan-OCR-master/Hunyuan-OCR-hf && python run_hy_ocr.py
 | **Spotting** | 检测并识别图片中的文字，将文本坐标格式化输出。 |
 | **Document Parsing** | • 识别图片中的公式，用LaTeX格式表示。<br><br>• 把图中的表格解析为 HTML。<br><br>• 解析图中的图表，对于流程图使用Mermaid格式表示，其他图表使用Markdown格式表示。<br><br>• 提取文档图片中正文的所有信息用markdown格式表示，其中页眉、页脚部分忽略，表格用html格式表达，文档中公式用latex格式表示，按照阅读顺序组织进行解析。|
 | **General Parsing** | • 提取图中的文字。|
-| **Information Extraction** | • 输出Key的值。<br><br>• 提取图片中的: ['key1','key2', ...] 的字段内容，并按照JSON格式返回。<br><br>• 提取图片中的字幕。 |
+| **Information Extraction** | • 输出Key的值。<br><br>• 提取图片中的: ['key1','key2', ...] 的字段内容，并按照JSON格式返回。<br><br>• 提取图中的字幕 |
 | **Translation** | 先提取文字，再将文字内容翻译为英文。若是文档，则其中页眉、页脚忽略。公式用latex格式表示，表格用html格式表示。 |
 
 
