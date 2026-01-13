@@ -15,7 +15,7 @@
 
 
 <p align="center">
-<a href="https://huggingface.co/spaces/tencent/HunyuanOCR"><b>🎯 在线Demo体验</b></a> |
+<a href="https://hunyuan.tencent.com/chat/HunyuanDefault?modelId=HY-OCR-1.0&mid=308&from=vision-zh"><b>🎯 在线Demo体验</b></a> |
 <a href="https://huggingface.co/tencent/HunyuanOCR"><b>📥 模型权重下载</b></a> |
 <a href="https://arxiv.org/abs/2511.19575"><b>📄 技术报告</b></a>
 </p>
@@ -31,6 +31,7 @@
 </div>
 
 ## 🔥 最新动态
+- **[2026/01/13]** ⭐ 我们发布了稳定的官方[在线Demo](https://hunyuan.tencent.com/chat/HunyuanDefault?modelId=HY-OCR-1.0&mid=308&from=vision-zh)页面, 欢迎试用！
 - **[2025/11/28]** 🛠️ 我们修复了vLLM推理bug以及system prompt等超参配置问题。建议使用最新的vLLM安装步骤和[推理脚本](https://github.com/Tencent-Hunyuan/HunyuanOCR/blob/main/Hunyuan-OCR-master/Hunyuan-OCR-vllm/run_hy_ocr.py)进行效果测试。目前Transformers相比vLLM框架仍然存在一定的精度差异（正在努力修复中）。
 - **[2025/11/25]** 📝 推理代码和模型权重已开源。
 

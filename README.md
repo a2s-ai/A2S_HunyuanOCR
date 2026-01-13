@@ -16,7 +16,7 @@
 
 
 <p align="center">
-<a href="https://huggingface.co/spaces/tencent/HunyuanOCR"><b>🎯 Demo</b></a> |
+<a href="https://hunyuan.tencent.com/chat/HunyuanDefault?modelId=HY-OCR-1.0&mid=308&from=vision-zh"><b>🎯 Demo</b></a> |
 <a href="https://huggingface.co/tencent/HunyuanOCR"><b>📥 Model Download</b></a> |
 <a href="https://arxiv.org/abs/2511.19575"><b>📄 Technical Report</b></a>
 </p>
@@ -32,6 +32,7 @@
 </div>
 
 ## 🔥 News
+- **[2026/01/13]** ⭐ We have released a stable official [online demo](https://hunyuan.tencent.com/chat/HunyuanDefault?modelId=HY-OCR-1.0&mid=308&from=vision-zh), feel free to try it out!
 - **[2025/11/28]** 🛠️ We fixed vLLM inference bugs and hyperparameter configuration issues such as system prompt. It is recommended to use the latest vLLM installation steps and the [inference script](https://github.com/Tencent-Hunyuan/HunyuanOCR/blob/main/Hunyuan-OCR-master/Hunyuan-OCR-vllm/run_hy_ocr.py) for performance testing. Currently, there is still a certain accuracy difference between Transformers and the vLLM framework (we are working on fixing this).
 - **[2025/11/25]** 📝 Inference code and model weights publicly available.
 
